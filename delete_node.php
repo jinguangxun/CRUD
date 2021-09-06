@@ -8,7 +8,7 @@ $parID = $_POST['id'];
 function delete_node($id){
     //In tree data structure, I found after deletion there will be empty array position;
     //e.g. A[0], A[1],A[3],A[4]
-    //So I decided to use linear array to delete, and use the linear node to make a tree node
+    //So I decided to use linear array to delete, and use the linear array to make a tree node
     $linear_data = file_get_contents("linear-data.txt");
     $linear_array = unserialize($linear_data);
 
